@@ -6,7 +6,9 @@ class string
     {
     Scanner sc=new Scanner(System.in);
     String s=sc.nextLine();
-    String arr[]=s.split(" ");
+    String arr[]=s.split
+    if(arr.length>=2)
+    {
     Arrays.sort(arr);int count=0,cm=1;String str="";
     for(int i=0;i<arr.length;i++)
     {
@@ -30,5 +32,6 @@ class string
     str=arr[i];
     }
     System.oput.println(str);
+    }
     }
 }
