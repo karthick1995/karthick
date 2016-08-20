@@ -15,7 +15,17 @@ class leastdig
     ts.add(j);
     n=n/10;
   }
-  System.out.println(ts.get(0)+""+ts.get(1));
+  Iterator<Integer> i=ts.iterator();int check=0;
+  while(i.hasNext())
+  {
+    if(check<k)
+    {
+      check+=1;
+      System.out.print(i.next());
+    }
+    else
+    break;
+  }
   }
 
 }
